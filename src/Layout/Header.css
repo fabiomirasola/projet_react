@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightgray;
+    color: #424141;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #424141;
+}
+
+.navbar button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar button span {
+    padding:5px;
+    margin-left: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color:grey;
+}
+
+.button{
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#after_title a{
+    color: #5e5c5c;
+}
+
+.menu_slide {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .menu_slide {
+    display: block;
+}
+
+.menu_slide a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu_slide a:hover {
+    background-color: #ddd;
+}
+
