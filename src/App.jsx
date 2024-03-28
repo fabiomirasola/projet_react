@@ -1,11 +1,11 @@
 import "./App.css";
 import Header from "./Layout/Header.jsx";
-import ProductItemForm from "./Product/ProductItemForm.jsx";
+import Product from "./Product/Product.jsx";
 function App() {
   return (
     <>
       <Header/>
-        <ProductItemForm/>
+        <Product/>
     </>
   )
 }

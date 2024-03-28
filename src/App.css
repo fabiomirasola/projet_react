@@ -1,2 +1,4 @@
-@import "src/Layout/Header.css";
-@import "src/Product/ProductItemForm.css";
+@import "Layout/Header.css";
+@import "Product/ProductItemForm.css";
+@import "Product/Product.css";
+@import "Product/ProductItem.css";
