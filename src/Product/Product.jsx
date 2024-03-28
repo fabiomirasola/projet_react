@@ -4,7 +4,6 @@ const Product = () =>{
     return(
         <div className="Product">
             <ProductItem/>
-            <ProductItem/>
         </div>
     )
 }

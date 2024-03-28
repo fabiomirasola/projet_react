@@ -1,5 +1,8 @@
 .Product{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+    gap: 50px; /* Espace entre les colonnes */
+    align-items: center;
+    margin-left: 12.5%;
+    margin-top: 5%;
 }

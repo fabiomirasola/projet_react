@@ -1,27 +1,29 @@
 import { useState, useEffect } from 'react';
 import ProductItemForm from './ProductItemForm.jsx';
-import {RequestProduct} from "../Model/Model.js";
+import { RequestProduct } from "../Model/Model.js";
 
 const ProductItem = () => {
-    const [product, setProduct] = useState('');
-
+    const [productList, setProductList] = useState([]);
 
     useEffect(() => {
         getProduct();
     }, []);
 
     function getProduct() {
-        RequestProduct.getProduct().then((response) =>{
-            setProduct(response);
-            })
+        RequestProduct.getAllProducts().then((response) =>{
+            setProductList(response);
+        });
     }
-
     return (
-        <div className="image">
-            {product.mainImage && <img src={product.mainImage} alt="test" />}
-            {product.name}
-            <ProductItemForm />
-        </div>
+        <>
+            {productList.map((product)=>(
+                <div className="image" key={product._id}>
+                    {product.mainImage && <img src={product.mainImage} alt="test"/>}
+                    {product.description}
+                    <ProductItemForm props={product}/>
+                </div>
+            ))}
+        </>
     );
 };
 
